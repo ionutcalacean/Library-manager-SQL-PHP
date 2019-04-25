@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<title>BIBLIOTECA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="library.jpeg" style="width:100%;" class="w3-round"><br><br>
+    <h4><b>BIBLIOTECA</b></h4>
+    <p class="w3-text-grey">NUME STUDENT: Calacean Ionut PROFESOR COORD: Gabriel Dragomir Grupa 30229, Seria B, CTI Romana</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>HOME</a> 
+    <a href="subiect.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>PROJECT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+     <p> <a href="https://www.facebook.com/utcluj.ro/" target="_blank"><i  class="fa fa-facebook-official w3-hover-opacity"> </i></a></p>
+	 <p> <a href="https://twitter.com/utcluj" target="_blank"><i  <i class="fa fa-twitter w3-hover-opacity"></i></a></p>
+	 <p> <a href="https://www.linkedin.com/company/utcn" target="_blank"><i  <i class="fa fa-linkedin w3-hover-opacity"></i></a></p>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="library1.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Bilbioteca</b></h1>
+	<div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Carti:</span> 
+	  <a href="cartiDisponibile.php">
+      <button class="w3-button w3-black">Verifica disponibilitate</button>
+	  </a>
+	  </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+	  <a href="EX3A_afisare.php">
+      <img src="library2.jpg" alt="EX3A" style="width:100%" class="w3-hover-opacity">
+	  </a>
+      <div class="w3-container w3-white">
+	   <form action="EX3A_afisare.php" method=post>
+      <div style=" width:25%; margin: auto" align="center">
+      <table border=1>
+      <tr align="center">
+      <td colspan="2" align="center"><input type=submit value="EX3A"></td>
+      </tr>
+      </table>
+      </div>
+      </form>
+        <p> Gasiti titlul, genul și nr_pagini pentru cărțile cu număr de pagini par, ordonat după număr pagini și gen.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+	   <a href="EX3B_afisare.php">
+      <img src="library3.jpg" alt="EX3B" style="width:100%" class="w3-hover-opacity">
+	  </a>
+      <div class="w3-container w3-white">
+         <form action="EX3B_afisare.php" method=post>
+      <div style=" width:25%; margin: auto" align="center">
+      <table border=1>
+      <tr align="center">
+      <td colspan="2" align="center"><input type=submit value="EX3B"></td>
+      </tr>
+      </table>
+      </div>
+      </form>
+        <p>Gasiti id-ul cartii, id-ul imprumutantului și număr zile întârziere pentru împrumuturile cu restituire întârziată (numai cele restituite) în ordinea descrescătoare a numărului de zile întârziere.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+	  <a href="EX4A.html">
+      <img src="library4.jpg" alt="EX4A" style="width:100%" class="w3-hover-opacity">
+	  </a>
+      <div class="w3-container w3-white">
+	  <form action="EX4A.html" method=post>
+      <div style=" width:25%; margin: auto" align="center">
+      <table border=1>
+      <tr align="center">
+      <td colspan="2" align="center"><input type=submit value="EX4A"></td>
+      </tr>
+      </table>
+      </div>
+      </form>
+      <p>Gasiti perechile unice de carti de un anumit gen dat, scrise de acelasi autor.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+	  <a href="EX4B_afisare.php">
+      <img src="library5.jpg" alt="EX4B" style="width:100%" class="w3-hover-opacity">
+	  </a>
+      <div class="w3-container w3-white">
+         <form action="EX4B_afisare.php" method=post>
+      <div style=" width:25%; margin: auto" align="center">
+      <table border=1>
+      <tr align="center">
+      <td colspan="2" align="center"><input type=submit value="EX4B"></td>
+      </tr>
+      </table>
+      </div>
+      </form>
+        <p>Gasiti numele și numărul de telefon pentru persoanele care au cărți nerestituite.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+	  <a href="EX5A.html">
+      <img src="library6.jpg" alt="EX5A" style="width:100%" class="w3-hover-opacity">
+	  </a>
+      <div class="w3-container w3-white">
+         <form action="EX5A.html" method=post>
+      <div style=" width:25%; margin: auto" align="center">
+      <table border=1>
+      <tr align="center">
+      <td colspan="2" align="center"><input type=submit value="EX5A"></td>
+      </tr>
+      </table>
+      </div>
+      </form>
+        <p>Gasiti numele autorului unei carti introduse.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+	  <a href="EX5B_afisare.php">
+      <img src="library7.jpg" alt="EX5B" style="width:100%" class="w3-hover-opacity">
+	  </a>
+      <div class="w3-container w3-white">
+         <form action="EX5B_afisare.php" method=post>
+      <div style=" width:25%; margin: auto" align="center">
+      <table border=1>
+      <tr align="center">
+      <td colspan="2" align="center"><input type=submit value="EX5B"></td>
+      </tr>
+      </table>
+      </div>
+      </form>
+        <p>Gasiti id-ul cartilor cu mai multi autori.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Third Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+	  <a href="EX6A_afisare.php">
+      <img src="library8.jpg" alt="EX6A" style="width:100%" class="w3-hover-opacity">
+	  </a>
+      <div class="w3-container w3-white">
+         <form action="EX6A_afisare.php" method=post>
+      <div style=" width:25%; margin: auto" align="center">
+      <table border=1>
+      <tr align="center">
+      <td colspan="2" align="center"><input type=submit value="EX6A"></td>
+      </tr>
+      </table>
+      </div>
+      </form>
+        <p>Titlul cartilor cele mai imprumutate</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+	  <a href="EX6B_afisare.php">
+      <img src="library9.jpg" alt="EX6B" style="width:100%" class="w3-hover-opacity">
+	  </a>
+      <div class="w3-container w3-white">
+         <form action="EX6B_afisare.php" method=post>
+      <div style=" width:25%; margin: auto" align="center">
+      <table border=1>
+      <tr align="center">
+      <td colspan="2" align="center"><input type=submit value="EX6B"></td>
+      </tr>
+      </table>
+      </div>
+      </form>
+        <p>Numarul de pagini mediu pentru fiecare gen.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+    
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>ionutzcalacean98@yahoo.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Cluj-Napoca, Cluj</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>0746656076</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Problem</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>PAGINA PRINCIPALA</h3>
+      <p>Universitatea noastra</p>
+      <p> <a href="https://www.utcluj.ro/" target="_blank">www.utcluj.ro</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>PROFESOR COORDONATOR</h3>
+      <ul class="w3-ul w3-hoverable">
+        <div>
+		<p> <a href="http://cs.utcluj.ro/csd/site/page.php?pid=164" target="_blank">Gabriel Dragomir</a></p>
+		</div>
+      </ul>
+    </div>
+
+  
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Administrator <a href="https://www.facebook.com/ionutz.calacean" title="admin" target="_blank" class="w3-hover-opacity">Ionut Calacean</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
